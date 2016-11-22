@@ -1,3 +1,13 @@
+body.landing * {
+  transition: all .3s ease;
+}
+
+body.landing.bg {
+    background-image: url(../images/wikimedium-mockup.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
 .landingWrapper {
   position: relative;
   display: flex;
@@ -6,7 +16,6 @@
   overflow: hidden;
 
   width: 1440px;
-  min-width: 1280px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
   margin: 0 auto;
 }
@@ -26,7 +35,7 @@
 }
 
 .mainSection p {
-  margin-top: 21px;
+  margin-top: 26px;
   font-size: 26px;
   line-height: 38px;
 }
@@ -46,19 +55,18 @@
 
 .mainSection.center section {
   width: 100%;
-  margin-top: 36px;
-  margin-left: 9px;
+  margin-top: 184px;
+  margin-left: 6px;
 }
 
 .mainSection section {
   position: absolute;
   width: 580px;
-  top: 147px;
 }
 
 
 .mainSection.left section {
-  top: 147px;
+  top: 148px;
   left: 160px;
 }
 
@@ -76,12 +84,12 @@
 
 .mainSection.left section figure {
   margin-left: -60px;
-  margin-top: 238px;
+  margin-top: 232px;
 }
 
 .mainSection.right section figure {
-  margin-left: 430px;
-  margin-top: 209px;
+  margin-left: 420px;
+  margin-top: 176px;
 
 }
 
@@ -92,10 +100,10 @@
 
 #mockup-1 {
   background-image: url(../images/landing/landing-mockup-1.jpg);
-  width: 701px;
+  width: 732px;
   height: 660px;
   top: 115px;
-  right: -85px;
+  right: -116px;
 }
 
 #mockup-2 {
@@ -110,9 +118,83 @@
 
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1460px) {
   .landingWrapper {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body.landing.bg {
+      background-image: url(../images/index_mockup_ipad.png);
+    }
+
+  .landingWrapper {
+    width: 1180px;
+    min-width: 910px;
+  }
+
+  .mainSection {
+    width: 1180px;
+    height: 568px;
+  }
+
+  .mainSection h2 {
+    font-size: 26px;
+    line-height: 32px;
+
+  }
+
+  .mainSection p {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .mainSection section {
+    top: 105px;
+    width: 410px;
+  }
+
+
+  .mainSection.left section {
+    top: 105px;
+    left: 190px;
+  }
+
+  .mainSection.right section {
+    top: 105px;
+    right: 190px;
+  }
+
+  .mainSection section figure {
+    width: 147px;
+    height: 14px;
+    margin-top: 100px;
+  }
+
+  .mainSection.left section figure {
+    margin-left: -40px;
+    margin-top: 165px;
+  }
+
+  .mainSection.right section figure {
+    margin-left: 303px;
+    margin-top: 146px;
+  }
+
+  #mockup-1 {
+    top: 85px;
+    right: 0;
+    width: 521px;
+    height: 470px;
+  }
+
+  #mockup-2 {
+    top: 70px;
+    left: 148px;
+    width: 380px;
+    height: 478px;
   }
 }
 
