@@ -3,9 +3,9 @@ body.landing * {
 }
 
 body.landing.bg {
-    background-image: url(../images/wikimedium-mockup.png);
-    background-repeat: no-repeat;
-    background-position: top center;
+  background-image: url(../images/wikimedium-mockup.png);
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .landingWrapper {
@@ -55,8 +55,7 @@ body.landing.bg {
 
 .mainSection.center section {
   width: 100%;
-  margin-top: 184px;
-  margin-left: 6px;
+  top: 182px;
 }
 
 .mainSection section {
@@ -93,6 +92,28 @@ body.landing.bg {
 
 }
 
+
+.mainSection.center section nav  {
+  margin-top: 210px;
+  font-size: 0;
+}
+
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  top: -10px;
+  width: 100%;
+}
+
+.mainSection.center footer p {
+  font-size: 16px;
+}
+
 .mockup {
   position: absolute;
   background-size: cover;
@@ -107,15 +128,21 @@ body.landing.bg {
 }
 
 #mockup-2 {
+  background-image: url(../images/landing/landing-mockup-2.jpg);
   top: 97px;
   left: 100px;
   width: 532px;
   height: 670px;
-  background-image: url(../images/landing/landing-mockup-2.jpg);
 }
 
 #mockup-3 {
-
+  background-image: url(../images/landing/landing-mockup-3.jpg);
+  top: 97px;
+  right: -732px;
+  width: 1348px;
+  height: 779px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
 }
 
 @media screen and (max-width: 1460px) {
@@ -151,6 +178,16 @@ body.landing.bg {
     line-height: 27px;
   }
 
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  .mainSection.center p {
+    margin-top: 21px;
+  }
+
+
   .mainSection section {
     top: 105px;
     width: 410px;
@@ -165,6 +202,11 @@ body.landing.bg {
   .mainSection.right section {
     top: 105px;
     right: 190px;
+  }
+
+  .mainSection.center section {
+    width: 100%;
+    top: 132px;
   }
 
   .mainSection section figure {
@@ -183,6 +225,19 @@ body.landing.bg {
     margin-top: 146px;
   }
 
+  .mainSection.center section nav  {
+    margin-top: 48px;
+    font-size: 0;
+  }
+
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+
+  .mainSection.center footer p {
+    font-size: 12px;
+  }
+
   #mockup-1 {
     top: 85px;
     right: 0;
@@ -195,6 +250,13 @@ body.landing.bg {
     left: 148px;
     width: 380px;
     height: 478px;
+  }
+
+  #mockup-3 {
+    top: 72px;
+    right: -444px;
+    width: 960px;
+    height: 555px;
   }
 }
 
